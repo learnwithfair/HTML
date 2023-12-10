@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>This is Form Demo</title>
+	</head>
+	<body>
+		<form>
+			<h1 align = "center">Student Registrasion Form</h1>
+			<fieldset>
+				<legend>
+					Personal Info
+				</legend>
+				<datalist id ="names">
+						<option value ="Rahatul">Rahatul</option>
+						<option value ="Anisul">Anisul</option>
+						<option value ="Suhanur">Suhanur</option>
+						<option value ="Imran">Imran</option>
+						<option value ="Sohel">Sohel</option>
+				</datalist>
+				<datalist id ="lastnames">
+						<option value ="Islam">Islam</option>
+						<option value ="Hosain">Hosain</option>
+						<option value ="Rana">Rana</option>
+						<option value ="Mia">Mia</option>
+						<option value ="Ali">Ali</option>
+						<option value ="Rohman">Rohman</option>
+				</datalist>
+				<p ><h3>First Name :&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text"title ="Please Fill in the Field" size ="30" 
+					placeholder="Enter First Name"list ="names"required pattern =[A-Za-z]+></h3></p>
+				<p ><h3>Last Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" title ="Please Fill in the Field" list ="lastnames"size ="30" 
+					placeholder ="Enter Last Name"></h3></p>
+				<p ><h3>Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="password" title ="Please Fill in the Field"size ="30" 
+					placeholder="Enter Your Password"required></h3></p>
+				<p ><h3>Gender :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" value =" Male" name = "gender">Male
+						<input type="radio" value =" Female"name = "gender" checked>Female
+						<input type="radio" value =" Other"name = "gender">Other
+				</h3></p>
+				<p ><h3>Religion :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" value =" Islam" name = "religions">Islam
+						<input type="radio" value =" Hindu"name = "religions" >Hindu
+						<input type="radio" value =" Other"name = "religions"checked>Other
+				</h3></p>
+				<p ><b>Programming Skill :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="checkbox" value ="C/C++" size ="30" name = "c" >C/C++
+						<input type="checkbox" value ="HTML" size ="30" name = "c">HTML
+						<input type="checkbox" value ="CSS" size ="30" name = "c">CSS
+						<input type="checkbox" value ="JAVA" size ="30" name = "c">JAVA
+						<input type="checkbox" value ="JAVA Swing" size ="30" name = "c">JAVA Swing
+						<input type="checkbox" value ="Android" size ="30" name = "c">Android
+						<input type="checkbox" value ="None" size ="30" name = "c" checked>None
+				</p>
+			</fieldset> 
+			<br/><br/>
+			<b>Department : </b>
+			<select name = "Department">
+				<option value="CSE">CSE</option>
+				<option value="EEE">EEE</option>
+				<option value="ICE" selected>ICE</option>
+				<option value="LLB">LLB</option>
+				<option value="BBA">BBA</option>
+				<option value="ETE">ETE</option>
+			</select>
+			<br/><br/>
+			<b>E-mail :</b><input type = "email" size="30" title ="Enter your E-mail" placeholder="Enter E-mail ID">
+			<br/><br/>		
+			<fieldset>
+				<legend>
+					<b>Comments</b>
+				</legend>
+				<textarea name ="commentstextarea"title ="Please writes your Comments"
+					cols ="50"rows ="7" >Write your comments here...
+				</textarea>
+			</fieldset>
+			<br/><br/>
+			<input type="submit" value ="Submit">
+			<input type="reset" value ="Clear">
+		</form>
+	</body>
+</html>

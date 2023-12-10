@@ -1,0 +1,256 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.details {
+    height: 390px;
+    width: 250px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #3b3b98;
+    box-shadow: 0px 5px 9px rgb(71, 56, 56);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.details:hover {
+    box-shadow: 0px 7px 15px rgb(71, 56, 56);
+}
+
+.book {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 270px;
+    cursor: pointer;
+    backface-visibility: visible;
+    width: 101%;
+}
+
+.back,
+.page2,
+.page4,
+.page6 {
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+.front,
+.page1,
+.page3,
+.page5 {
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+.back,
+.front>img,
+.page1,
+.page2,
+.page3,
+.page4,
+.page5,
+.page6 {
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 100%;
+    /* width: 250px; */
+    height: 90%;
+    top: 0;
+    left: 0;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+}
+
+.social>p {
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.page5>p,
+.page5>img {
+    letter-spacing: 1px;
+    line-height: 5px;
+    text-align: center;
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.page4,
+.page3 {
+    background-color: #f5f5f5;
+}
+
+.page2,
+.page1 {
+    background-color: #efefef;
+}
+
+.page6 {
+    background-color: #fdfdfd;
+}
+
+.page5 {
+    background-color: #fafafa;
+}
+
+.title-description>a {
+    color: #1a272b;
+}
+
+.title-description>a:focus,
+.title-description>a:hover {
+    color: #225581;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    display: inline-flex;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid transparent;
+    box-shadow: 1px 3px 5px rgb(71, 56, 56);
+}
+
+.btn-info.active,
+.btn-info:focus,
+.btn-info:hover {
+    color: #333;
+    text-decoration: none;
+    background-color: #39b3d7;
+    border-color: #269abc;
+    box-shadow: 0px 5px 12px rgb(71, 56, 56);
+}
+
+.book:hover .back {
+    transform: rotateY(-20deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgb(0 0 0 / 20%);
+}
+
+.book:hover .page6 {
+    transform: rotateY(-50deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgb(0 0 0 / 20%);
+}
+
+.book:hover .page5 {
+    transform: rotateY(-130deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgb(0 0 0 / 20%);
+}
+
+.book:hover .page4 {
+    transform: rotateY(-40deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgb(0 0 0 / 20%);
+}
+
+.book:hover .page3 {
+    transform: rotateY(-140deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgb(0 0 0 / 20%);
+}
+
+.book:hover .page2 {
+    transform: rotateY(-30deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgb(0 0 0 / 20%);
+}
+
+.book:hover .page1 {
+    transform: rotateY(-150deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgb(0 0 0 / 20%);
+}
+
+.book:hover .front {
+    transform: rotateY(-160deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgb(0 0 0 / 20%);
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+@media only screen and (max-width: 990px) {
+    .book:hover .front {
+        transform: rotateY(-160deg) scale(1.1);
+        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+        margin-left: 100px
+    }
+
+    .book:hover .page1 {
+        transform: rotateY(-150deg) scale(1.1);
+        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+        margin-left: 100px
+    }
+
+    .book:hover .page2 {
+        transform: rotateY(-30deg) scale(1.1);
+        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+        margin-left: 100px
+    }
+
+    .book:hover .page3 {
+        transform: rotateY(-140deg) scale(1.1);
+        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+        margin-left: 100px
+    }
+
+    .book:hover .page4 {
+        transform: rotateY(-40deg) scale(1.1);
+        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+        margin-left: 100px
+    }
+
+    .book:hover .page5 {
+        transform: rotateY(-130deg) scale(1.1);
+        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+        margin-left: 100px
+    }
+
+    .book:hover .page5 p {
+        transform: rotateY(180deg) scale(1.1);
+    }
+
+    .book:hover .page6 {
+        transform: rotateY(-50deg) scale(1.1);
+        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+        margin-left: 100px
+    }
+
+    .book:hover .back {
+        transform: rotateY(-20deg) scale(1.1);
+        margin-left: 100px
+    }
+
+    /* 
+    .thumbnail {
+        width: 45%;
+        height: 220px !important;
+        margin: 5px
+    }
+
+    .news_body h4 {
+        width: 280px !important
+    }
+
+    .vc_msg_title img {
+        text-align: center;
+        width: 30%;
+        margin-left: 238px !important
+    } */
+}
